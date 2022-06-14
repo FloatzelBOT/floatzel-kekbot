@@ -1,5 +1,9 @@
 package com.godson.kekbot.command;
 
+import com.eziosoft.floatzel.kekbot.KekGlue.CommandEvent;
+
+import com.eziosoft.floatzel.kekbot.KekGlueUtil.KekCommand;
+
 import net.dv8tion.jda.api.entities.Message;
 
 import javax.imageio.ImageIO;
@@ -10,7 +14,9 @@ import java.io.IOException;
 import java.net.*;
 import java.util.concurrent.ExecutionException;
 
-public abstract class ImageCommand extends Command {
+import static com.eziosoft.floatzel.kekbot.KekGlueTwo.throwException;
+
+public abstract class ImageCommand extends KekCommand {
 
     protected String filename;
 
