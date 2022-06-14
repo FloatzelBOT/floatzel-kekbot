@@ -1,11 +1,6 @@
 package com.godson.kekbot.command.commands.meme;
 
-import com.eziosoft.floatzel.Commands.FCommand;
-import com.eziosoft.floatzel.SlashCommands.FSlashableImageCommand;
-import com.eziosoft.floatzel.kekbot.KekGlue;
-import com.eziosoft.floatzel.kekbot.SlashableKekCommand;
-import com.jagrosh.jdautilities.command.CommandEvent;
-import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
+import com.eziosoft.floatzel.kekbot.SlashableKekImageCommand;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -15,7 +10,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 
-public class Brave extends SlashableKekCommand {
+public class Brave extends SlashableKekImageCommand {
 
     public Brave() {
         name = "brave";
@@ -24,11 +19,6 @@ public class Brave extends SlashableKekCommand {
         usage.add("brave <image URL>");
         filename = "NOT_BRAVE_ENOUGH";
         category = fun;
-    }
-
-    @Override
-    protected void onExecuted(KekGlue.CommandEvent commandEvent) {
-
     }
 
 
